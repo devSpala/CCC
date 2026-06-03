@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="BridgeTest.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BridgeTest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Spacing="15" Margin="0,0,0,20">
+            <Button Content="Run Bridge App" Click="Button_Click" Padding="15,10" CornerRadius="4" FontSize="16"/>
+            <Button Content="App Service Init" Click="Button_Click_1" Padding="15,10" CornerRadius="4" FontSize="16"/>
+            <Button Content="FrequentMsg" Click="TestRapidMsg" Padding="15,10" CornerRadius="4" FontSize="16"/>
+        </StackPanel>
+
+        <TextBox x:Name="LogView" Grid.Row="1" AcceptsReturn="True" ScrollViewer.VerticalScrollMode="Enabled" 
+                 HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                 FontFamily="Consolas" FontSize="14" Padding="10" />
+    </Grid>
+</Page>

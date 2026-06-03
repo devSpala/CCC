@@ -1,0 +1,8 @@
+--------- beginning of main
+06-01 18:03:48.029 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=300 gated=false max_retries=20
+06-01 18:03:48.068 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=300.0000 attempt=0
+06-01 18:03:48.068 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 18:03:48.579 28723 31174 D CCCHarness: CCCDATA recv_complete payload_bytes=314572800 payload_mb=300.0000 server_recv_ms=507.752
+06-01 18:03:48.579 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=314572800 payload_mb=300.0000 t_conn_ms=1.367 t_payload_ms=509.340 t_total_ms=510.707
+06-01 18:03:48.580 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=512 send_result_ms=510.707
+06-01 18:03:48.580 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=510.707

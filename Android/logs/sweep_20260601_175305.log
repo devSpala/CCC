@@ -1,0 +1,553 @@
+--------- beginning of main
+06-01 17:53:05.224 28583 28583 D CCCHarness: CCCDATA cmd_sweep reps=30
+06-01 17:53:05.225 28583 28911 D CCCHarness: CCCDATA sweep_start reps=30 sizes_mb=1,2,5,10,25,50,100,150,200
+06-01 17:53:05.238 28723 28912 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=6.035
+06-01 17:53:05.238 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.514 t_payload_ms=7.400 t_total_ms=11.914
+06-01 17:53:05.305 28723 28913 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.595
+06-01 17:53:05.306 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.466 t_payload_ms=9.297 t_total_ms=13.763
+06-01 17:53:05.372 28723 28914 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.935
+06-01 17:53:05.374 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.220 t_payload_ms=10.301 t_total_ms=14.521
+06-01 17:53:05.439 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.918 t_payload_ms=7.436 t_total_ms=11.354
+06-01 17:53:05.439 28723 28915 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.743
+06-01 17:53:05.503 28723 28916 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.075
+06-01 17:53:05.503 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.819 t_payload_ms=8.551 t_total_ms=12.370
+06-01 17:53:05.568 28723 28917 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.331
+06-01 17:53:05.568 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=2.711 t_payload_ms=8.785 t_total_ms=11.496
+06-01 17:53:05.633 28723 28918 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.936
+06-01 17:53:05.634 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.736 t_payload_ms=9.411 t_total_ms=13.147
+06-01 17:53:05.699 28723 28919 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.063
+06-01 17:53:05.701 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.922 t_payload_ms=10.188 t_total_ms=14.110
+06-01 17:53:05.765 28723 28920 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.024
+06-01 17:53:05.766 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.709 t_payload_ms=9.128 t_total_ms=12.837
+06-01 17:53:05.831 28723 28921 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.136
+06-01 17:53:05.833 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.984 t_payload_ms=10.613 t_total_ms=14.597
+06-01 17:53:05.900 28723 28922 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.252
+06-01 17:53:05.902 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.920 t_payload_ms=11.777 t_total_ms=15.697
+06-01 17:53:05.967 28723 28923 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.419
+06-01 17:53:05.967 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.861 t_payload_ms=9.465 t_total_ms=13.327
+06-01 17:53:06.032 28723 28924 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.717
+06-01 17:53:06.033 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.858 t_payload_ms=9.353 t_total_ms=13.211
+06-01 17:53:06.097 28723 28925 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.716
+06-01 17:53:06.098 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.063 t_payload_ms=8.981 t_total_ms=13.044
+06-01 17:53:06.163 28723 28926 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.484
+06-01 17:53:06.163 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.796 t_payload_ms=8.396 t_total_ms=12.192
+06-01 17:53:06.228 28723 28927 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.684
+06-01 17:53:06.229 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.892 t_payload_ms=8.437 t_total_ms=12.329
+06-01 17:53:06.290 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.317 t_payload_ms=5.291 t_total_ms=8.609
+06-01 17:53:06.290 28723 28928 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.496
+06-01 17:53:06.354 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.978 t_payload_ms=8.451 t_total_ms=12.428
+06-01 17:53:06.355 28723 28929 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.892
+06-01 17:53:06.419 28723 28930 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.187
+06-01 17:53:06.422 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.750 t_payload_ms=11.029 t_total_ms=14.779
+06-01 17:53:06.487 28723 28931 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.082
+06-01 17:53:06.490 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.956 t_payload_ms=10.450 t_total_ms=14.406
+06-01 17:53:06.554 28723 28932 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.144
+06-01 17:53:06.557 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.759 t_payload_ms=10.654 t_total_ms=14.412
+06-01 17:53:06.623 28723 28933 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.911
+06-01 17:53:06.626 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.003 t_payload_ms=10.796 t_total_ms=14.799
+06-01 17:53:06.690 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.057 t_payload_ms=8.743 t_total_ms=11.800
+06-01 17:53:06.691 28723 28934 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.806
+06-01 17:53:06.755 28723 28935 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.732
+06-01 17:53:06.758 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.030 t_payload_ms=10.262 t_total_ms=14.292
+06-01 17:53:06.823 28723 28936 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.117
+06-01 17:53:06.823 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.842 t_payload_ms=8.417 t_total_ms=12.259
+06-01 17:53:06.888 28723 28937 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.971
+06-01 17:53:06.890 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.969 t_payload_ms=10.786 t_total_ms=14.755
+06-01 17:53:06.956 28723 28938 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=6.065
+06-01 17:53:06.959 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.814 t_payload_ms=12.141 t_total_ms=15.956
+06-01 17:53:07.023 28723 28939 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.320
+06-01 17:53:07.023 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.082 t_payload_ms=7.416 t_total_ms=11.499
+06-01 17:53:07.090 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.047 t_payload_ms=10.115 t_total_ms=14.162
+06-01 17:53:07.090 28723 28940 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.147
+06-01 17:53:07.155 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.955 t_payload_ms=8.513 t_total_ms=12.467
+06-01 17:53:07.155 28723 28941 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.009
+06-01 17:53:07.207 28583 28911 D CCCHarness: CCCDATA sweep_size_done payload_mb=1 reps=30
+06-01 17:53:07.222 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.775 t_payload_ms=10.130 t_total_ms=13.905
+06-01 17:53:07.222 28723 28942 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.249
+06-01 17:53:07.287 28723 28943 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.548
+06-01 17:53:07.288 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.387 t_payload_ms=10.625 t_total_ms=14.012
+06-01 17:53:07.352 28723 28944 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.241
+06-01 17:53:07.354 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.665 t_payload_ms=10.645 t_total_ms=14.311
+06-01 17:53:07.422 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.781 t_payload_ms=11.613 t_total_ms=15.394
+06-01 17:53:07.422 28723 28945 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.521
+06-01 17:53:07.493 28723 28946 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.590
+06-01 17:53:07.494 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=4.052 t_payload_ms=16.009 t_total_ms=20.061
+06-01 17:53:07.563 28723 28947 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=8.150
+06-01 17:53:07.564 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.675 t_payload_ms=12.498 t_total_ms=16.173
+06-01 17:53:07.633 28723 28948 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.715
+06-01 17:53:07.634 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.631 t_payload_ms=13.871 t_total_ms=17.502
+06-01 17:53:07.702 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.693 t_payload_ms=11.378 t_total_ms=15.072
+06-01 17:53:07.702 28723 28949 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.579
+06-01 17:53:07.770 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.437 t_payload_ms=12.439 t_total_ms=15.876
+06-01 17:53:07.771 28723 28950 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=8.000
+06-01 17:53:07.835 28723 28951 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.076
+06-01 17:53:07.836 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.882 t_payload_ms=10.320 t_total_ms=14.202
+06-01 17:53:07.905 28723 28952 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.979
+06-01 17:53:07.906 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=4.136 t_payload_ms=13.645 t_total_ms=17.782
+06-01 17:53:07.974 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=4.043 t_payload_ms=11.078 t_total_ms=15.121
+06-01 17:53:07.974 28723 28953 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.276
+06-01 17:53:08.041 28723 28954 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.950
+06-01 17:53:08.042 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.819 t_payload_ms=11.648 t_total_ms=15.467
+06-01 17:53:08.111 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=4.018 t_payload_ms=11.901 t_total_ms=15.919
+06-01 17:53:08.111 28723 28955 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.277
+06-01 17:53:08.177 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.405 t_payload_ms=11.445 t_total_ms=14.850
+06-01 17:53:08.177 28723 28956 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.214
+06-01 17:53:08.245 28723 28957 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.805
+06-01 17:53:08.245 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.551 t_payload_ms=13.029 t_total_ms=16.579
+06-01 17:53:08.313 28723 28958 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.355
+06-01 17:53:08.314 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.935 t_payload_ms=13.323 t_total_ms=17.257
+06-01 17:53:08.379 28723 28959 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=5.501
+06-01 17:53:08.382 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.041 t_payload_ms=11.422 t_total_ms=14.463
+06-01 17:53:08.448 28723 28960 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=5.949
+06-01 17:53:08.449 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.533 t_payload_ms=11.795 t_total_ms=15.328
+06-01 17:53:08.517 28723 28961 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.709
+06-01 17:53:08.518 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.812 t_payload_ms=12.072 t_total_ms=15.884
+06-01 17:53:08.586 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=4.017 t_payload_ms=11.538 t_total_ms=15.555
+06-01 17:53:08.587 28723 28962 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.126
+06-01 17:53:08.657 28723 28963 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=5.728
+06-01 17:53:08.657 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=4.111 t_payload_ms=14.409 t_total_ms=18.520
+06-01 17:53:08.726 28723 28964 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.372
+06-01 17:53:08.726 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.862 t_payload_ms=11.922 t_total_ms=15.784
+06-01 17:53:08.794 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.948 t_payload_ms=11.397 t_total_ms=15.345
+06-01 17:53:08.794 28723 28965 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.118
+06-01 17:53:08.857 28723 28966 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=5.979
+06-01 17:53:08.857 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.600 t_payload_ms=8.165 t_total_ms=11.765
+06-01 17:53:08.923 28723 28967 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.433
+06-01 17:53:08.923 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.511 t_payload_ms=10.520 t_total_ms=14.030
+06-01 17:53:08.992 28723 28968 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.659
+06-01 17:53:08.994 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.825 t_payload_ms=14.255 t_total_ms=18.080
+06-01 17:53:09.062 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=4.006 t_payload_ms=11.032 t_total_ms=15.038
+06-01 17:53:09.062 28723 28969 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.016
+06-01 17:53:09.130 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.809 t_payload_ms=12.281 t_total_ms=16.090
+06-01 17:53:09.130 28723 28970 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=7.400
+06-01 17:53:09.197 28723 28971 D CCCHarness: CCCDATA recv_complete payload_bytes=2097152 payload_mb=2.0000 server_recv_ms=6.956
+06-01 17:53:09.197 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=2097152 payload_mb=2.0000 t_conn_ms=3.699 t_payload_ms=12.745 t_total_ms=16.443
+06-01 17:53:09.249 28583 28911 D CCCHarness: CCCDATA sweep_size_done payload_mb=2 reps=30
+06-01 17:53:09.273 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.621 t_payload_ms=20.086 t_total_ms=23.707
+06-01 17:53:09.273 28723 28972 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=15.901
+06-01 17:53:09.348 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.427 t_payload_ms=20.335 t_total_ms=23.762
+06-01 17:53:09.348 28723 28973 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=15.090
+06-01 17:53:09.419 28723 28974 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=12.493
+06-01 17:53:09.419 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.552 t_payload_ms=16.905 t_total_ms=19.457
+06-01 17:53:09.494 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.921 t_payload_ms=20.203 t_total_ms=23.123
+06-01 17:53:09.494 28723 28975 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=13.901
+06-01 17:53:09.568 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.672 t_payload_ms=18.470 t_total_ms=22.142
+06-01 17:53:09.568 28723 28976 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.347
+06-01 17:53:09.642 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.603 t_payload_ms=19.476 t_total_ms=23.079
+06-01 17:53:09.642 28723 28977 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.999
+06-01 17:53:09.720 28723 28978 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=13.360
+06-01 17:53:09.722 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.568 t_payload_ms=25.303 t_total_ms=28.872
+06-01 17:53:09.796 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.459 t_payload_ms=18.463 t_total_ms=21.922
+06-01 17:53:09.796 28723 28979 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=13.951
+06-01 17:53:09.872 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.249 t_payload_ms=21.389 t_total_ms=24.638
+06-01 17:53:09.872 28723 28980 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=15.369
+06-01 17:53:09.945 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.528 t_payload_ms=17.583 t_total_ms=21.111
+06-01 17:53:09.945 28723 28981 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=13.419
+06-01 17:53:10.019 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.942 t_payload_ms=18.850 t_total_ms=21.791
+06-01 17:53:10.019 28723 28982 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.053
+06-01 17:53:10.090 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.994 t_payload_ms=17.464 t_total_ms=20.458
+06-01 17:53:10.091 28723 28983 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=12.711
+06-01 17:53:10.163 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.941 t_payload_ms=17.870 t_total_ms=20.811
+06-01 17:53:10.163 28723 28984 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=13.254
+06-01 17:53:10.235 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.218 t_payload_ms=17.824 t_total_ms=21.042
+06-01 17:53:10.235 28723 28985 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=13.059
+06-01 17:53:10.308 28723 28986 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.248
+06-01 17:53:10.308 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.964 t_payload_ms=19.036 t_total_ms=22.000
+06-01 17:53:10.386 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.164 t_payload_ms=22.559 t_total_ms=25.723
+06-01 17:53:10.386 28723 28987 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=17.861
+06-01 17:53:10.456 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.244 t_payload_ms=16.145 t_total_ms=19.389
+06-01 17:53:10.457 28723 28988 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=11.608
+06-01 17:53:10.529 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.271 t_payload_ms=17.713 t_total_ms=20.984
+06-01 17:53:10.529 28723 28989 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=12.877
+06-01 17:53:10.600 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.985 t_payload_ms=17.767 t_total_ms=20.751
+06-01 17:53:10.600 28723 28990 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=12.476
+06-01 17:53:10.675 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.523 t_payload_ms=18.892 t_total_ms=22.415
+06-01 17:53:10.675 28723 28991 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.438
+06-01 17:53:10.748 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.962 t_payload_ms=18.662 t_total_ms=21.624
+06-01 17:53:10.748 28723 28992 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.041
+06-01 17:53:10.821 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.854 t_payload_ms=19.201 t_total_ms=22.056
+06-01 17:53:10.822 28723 28993 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.465
+06-01 17:53:10.891 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.834 t_payload_ms=15.218 t_total_ms=18.052
+06-01 17:53:10.891 28723 28994 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=13.107
+06-01 17:53:10.965 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=2.947 t_payload_ms=19.571 t_total_ms=22.518
+06-01 17:53:10.965 28723 28995 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.306
+06-01 17:53:11.038 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.260 t_payload_ms=18.651 t_total_ms=21.911
+06-01 17:53:11.038 28723 28996 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=13.826
+06-01 17:53:11.112 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.188 t_payload_ms=19.194 t_total_ms=22.382
+06-01 17:53:11.112 28723 28997 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.141
+06-01 17:53:11.186 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.110 t_payload_ms=18.568 t_total_ms=21.678
+06-01 17:53:11.186 28723 28998 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.149
+06-01 17:53:11.260 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.352 t_payload_ms=19.141 t_total_ms=22.492
+06-01 17:53:11.260 28723 28999 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.000
+06-01 17:53:11.338 28723 29000 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=16.833
+06-01 17:53:11.338 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.447 t_payload_ms=23.353 t_total_ms=26.800
+06-01 17:53:11.412 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=5242880 payload_mb=5.0000 t_conn_ms=3.368 t_payload_ms=18.432 t_total_ms=21.800
+06-01 17:53:11.412 28723 29001 D CCCHarness: CCCDATA recv_complete payload_bytes=5242880 payload_mb=5.0000 server_recv_ms=14.321
+06-01 17:53:11.463 28583 28911 D CCCHarness: CCCDATA sweep_size_done payload_mb=5 reps=30
+06-01 17:53:11.491 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.273 t_payload_ms=25.970 t_total_ms=28.242
+06-01 17:53:11.491 28723 29002 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=20.647
+06-01 17:53:11.573 28723 29003 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=21.366
+06-01 17:53:11.573 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.972 t_payload_ms=27.921 t_total_ms=30.893
+06-01 17:53:11.654 28723 29004 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=22.168
+06-01 17:53:11.654 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.738 t_payload_ms=26.690 t_total_ms=29.428
+06-01 17:53:11.744 28723 29005 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=26.690
+06-01 17:53:11.746 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.623 t_payload_ms=36.127 t_total_ms=39.750
+06-01 17:53:11.829 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.800 t_payload_ms=26.892 t_total_ms=30.692
+06-01 17:53:11.829 28723 29006 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=23.045
+06-01 17:53:11.913 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.753 t_payload_ms=29.789 t_total_ms=32.542
+06-01 17:53:11.913 28723 29007 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=25.494
+06-01 17:53:11.997 28723 29008 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=23.874
+06-01 17:53:11.997 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.877 t_payload_ms=29.564 t_total_ms=32.441
+06-01 17:53:12.078 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.461 t_payload_ms=26.521 t_total_ms=28.982
+06-01 17:53:12.078 28723 29009 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=22.008
+06-01 17:53:12.159 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.504 t_payload_ms=25.418 t_total_ms=28.922
+06-01 17:53:12.159 28723 29010 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=21.326
+06-01 17:53:12.240 28723 29011 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=21.862
+06-01 17:53:12.240 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.496 t_payload_ms=26.087 t_total_ms=29.582
+06-01 17:53:12.323 28723 29012 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=24.459
+06-01 17:53:12.324 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.894 t_payload_ms=28.969 t_total_ms=31.863
+06-01 17:53:12.409 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.821 t_payload_ms=30.757 t_total_ms=34.578
+06-01 17:53:12.409 28723 29013 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=27.087
+06-01 17:53:12.492 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.693 t_payload_ms=27.266 t_total_ms=30.960
+06-01 17:53:12.492 28723 29014 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=23.135
+06-01 17:53:12.570 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.342 t_payload_ms=22.759 t_total_ms=26.101
+06-01 17:53:12.570 28723 29015 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=19.097
+06-01 17:53:12.655 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.570 t_payload_ms=30.345 t_total_ms=32.915
+06-01 17:53:12.655 28723 29016 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=26.392
+06-01 17:53:12.735 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.497 t_payload_ms=25.029 t_total_ms=28.527
+06-01 17:53:12.735 28723 29017 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=20.617
+06-01 17:53:12.818 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.469 t_payload_ms=27.779 t_total_ms=31.248
+06-01 17:53:12.818 28723 29018 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=23.767
+06-01 17:53:12.907 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.309 t_payload_ms=34.164 t_total_ms=37.473
+06-01 17:53:12.907 28723 29019 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=26.869
+06-01 17:53:12.989 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.186 t_payload_ms=26.888 t_total_ms=30.074
+06-01 17:53:12.989 28723 29020 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=22.959
+06-01 17:53:13.065 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.361 t_payload_ms=23.113 t_total_ms=25.474
+06-01 17:53:13.065 28723 29021 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=21.390
+06-01 17:53:13.148 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.859 t_payload_ms=28.336 t_total_ms=31.194
+06-01 17:53:13.148 28723 29022 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=23.842
+06-01 17:53:13.230 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.504 t_payload_ms=25.925 t_total_ms=29.429
+06-01 17:53:13.230 28723 29023 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=22.470
+06-01 17:53:13.311 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.534 t_payload_ms=26.975 t_total_ms=29.509
+06-01 17:53:13.311 28723 29024 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=22.890
+06-01 17:53:13.391 28723 29025 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=21.392
+06-01 17:53:13.391 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.469 t_payload_ms=24.887 t_total_ms=28.356
+06-01 17:53:13.473 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.942 t_payload_ms=27.915 t_total_ms=30.857
+06-01 17:53:13.473 28723 29026 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=23.946
+06-01 17:53:13.555 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.007 t_payload_ms=28.278 t_total_ms=31.285
+06-01 17:53:13.555 28723 29027 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=24.024
+06-01 17:53:13.636 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.188 t_payload_ms=26.833 t_total_ms=30.021
+06-01 17:53:13.636 28723 29028 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=21.582
+06-01 17:53:13.717 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=3.368 t_payload_ms=25.774 t_total_ms=29.142
+06-01 17:53:13.717 28723 29029 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=21.618
+06-01 17:53:13.806 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.902 t_payload_ms=34.665 t_total_ms=37.568
+06-01 17:53:13.806 28723 29030 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=24.368
+06-01 17:53:13.888 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=10485760 payload_mb=10.0000 t_conn_ms=2.883 t_payload_ms=27.662 t_total_ms=30.545
+06-01 17:53:13.888 28723 29031 D CCCHarness: CCCDATA recv_complete payload_bytes=10485760 payload_mb=10.0000 server_recv_ms=23.149
+06-01 17:53:13.940 28583 28911 D CCCHarness: CCCDATA sweep_size_done payload_mb=10 reps=30
+06-01 17:53:13.999 28723 29032 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=50.249
+06-01 17:53:14.001 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.929 t_payload_ms=57.166 t_total_ms=60.096
+06-01 17:53:14.115 28723 29033 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=54.343
+06-01 17:53:14.115 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=3.288 t_payload_ms=58.650 t_total_ms=61.938
+06-01 17:53:14.222 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.627 t_payload_ms=52.702 t_total_ms=55.329
+06-01 17:53:14.222 28723 29034 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=48.405
+06-01 17:53:14.330 28723 29035 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=50.193
+06-01 17:53:14.331 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.348 t_payload_ms=54.672 t_total_ms=57.020
+06-01 17:53:14.444 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.740 t_payload_ms=58.493 t_total_ms=61.233
+06-01 17:53:14.444 28723 29036 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=53.367
+06-01 17:53:14.560 28723 29037 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=56.509
+06-01 17:53:14.560 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.868 t_payload_ms=60.881 t_total_ms=63.749
+06-01 17:53:14.663 28723 29038 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=44.043
+06-01 17:53:14.663 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=3.126 t_payload_ms=48.435 t_total_ms=51.561
+06-01 17:53:14.766 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.549 t_payload_ms=48.584 t_total_ms=51.133
+06-01 17:53:14.766 28723 29039 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=44.409
+06-01 17:53:14.875 28723 29040 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=49.887
+06-01 17:53:14.875 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.401 t_payload_ms=54.296 t_total_ms=56.697
+06-01 17:53:14.981 28723 29041 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=47.156
+06-01 17:53:14.981 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.576 t_payload_ms=51.659 t_total_ms=54.235
+06-01 17:53:15.098 28723 29042 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=54.055
+06-01 17:53:15.098 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.644 t_payload_ms=62.396 t_total_ms=65.040
+06-01 17:53:15.204 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.678 t_payload_ms=51.430 t_total_ms=54.108
+06-01 17:53:15.204 28723 29043 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=46.937
+06-01 17:53:15.314 28723 29044 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=50.495
+06-01 17:53:15.314 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=3.382 t_payload_ms=55.156 t_total_ms=58.538
+06-01 17:53:15.421 28723 29045 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=47.216
+06-01 17:53:15.421 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=3.239 t_payload_ms=51.552 t_total_ms=54.792
+06-01 17:53:15.525 28723 29046 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=45.511
+06-01 17:53:15.525 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.516 t_payload_ms=49.675 t_total_ms=52.191
+06-01 17:53:15.637 28723 29047 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=53.897
+06-01 17:53:15.638 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.600 t_payload_ms=58.384 t_total_ms=60.984
+06-01 17:53:15.749 28723 29048 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=52.383
+06-01 17:53:15.749 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.584 t_payload_ms=56.670 t_total_ms=59.254
+06-01 17:53:15.856 28723 29049 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=48.231
+06-01 17:53:15.856 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.702 t_payload_ms=52.347 t_total_ms=55.049
+06-01 17:53:15.963 28723 29050 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=48.828
+06-01 17:53:15.963 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.649 t_payload_ms=52.499 t_total_ms=55.148
+06-01 17:53:16.070 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.580 t_payload_ms=53.164 t_total_ms=55.744
+06-01 17:53:16.070 28723 29051 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=48.040
+06-01 17:53:16.178 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.550 t_payload_ms=53.305 t_total_ms=55.855
+06-01 17:53:16.178 28723 29052 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=49.183
+06-01 17:53:16.293 28723 29053 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=56.119
+06-01 17:53:16.293 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.601 t_payload_ms=60.569 t_total_ms=63.170
+06-01 17:53:16.403 28723 29054 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=51.437
+06-01 17:53:16.403 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=3.006 t_payload_ms=55.347 t_total_ms=58.353
+06-01 17:53:16.507 28723 29055 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=45.603
+06-01 17:53:16.507 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.478 t_payload_ms=49.510 t_total_ms=51.988
+06-01 17:53:16.616 28723 29056 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=51.221
+06-01 17:53:16.616 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.504 t_payload_ms=55.278 t_total_ms=57.782
+06-01 17:53:16.723 28723 29057 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=48.444
+06-01 17:53:16.723 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.592 t_payload_ms=52.813 t_total_ms=55.405
+06-01 17:53:16.827 28723 29058 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=45.843
+06-01 17:53:16.827 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.711 t_payload_ms=50.409 t_total_ms=53.120
+06-01 17:53:16.928 28723 29061 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=43.229
+06-01 17:53:16.928 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=3.394 t_payload_ms=45.643 t_total_ms=49.037
+06-01 17:53:17.028 28723 29062 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=44.520
+06-01 17:53:17.029 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=1.482 t_payload_ms=47.719 t_total_ms=49.201
+06-01 17:53:17.137 28723 29063 D CCCHarness: CCCDATA recv_complete payload_bytes=26214400 payload_mb=25.0000 server_recv_ms=50.228
+06-01 17:53:17.137 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=26214400 payload_mb=25.0000 t_conn_ms=2.917 t_payload_ms=54.363 t_total_ms=57.280
+06-01 17:53:17.188 28583 28911 D CCCHarness: CCCDATA sweep_size_done payload_mb=25 reps=30
+06-01 17:53:17.288 28723 29064 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=93.005
+06-01 17:53:17.288 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.652 t_payload_ms=97.036 t_total_ms=99.688
+06-01 17:53:17.437 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=3.249 t_payload_ms=93.237 t_total_ms=96.486
+06-01 17:53:17.437 28723 29065 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=89.340
+06-01 17:53:17.580 28723 29066 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=85.800
+06-01 17:53:17.580 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.563 t_payload_ms=89.752 t_total_ms=92.315
+06-01 17:53:17.728 28723 29067 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=89.539
+06-01 17:53:17.728 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=3.556 t_payload_ms=92.927 t_total_ms=96.483
+06-01 17:53:17.873 28723 29068 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=86.525
+06-01 17:53:17.873 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.506 t_payload_ms=91.038 t_total_ms=93.545
+06-01 17:53:18.017 28723 29069 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=86.191
+06-01 17:53:18.018 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.446 t_payload_ms=90.309 t_total_ms=92.755
+06-01 17:53:18.163 28723 29070 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=87.279
+06-01 17:53:18.163 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.235 t_payload_ms=90.811 t_total_ms=93.046
+06-01 17:53:18.311 28723 29071 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=89.666
+06-01 17:53:18.311 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.380 t_payload_ms=93.923 t_total_ms=96.303
+06-01 17:53:18.457 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.409 t_payload_ms=91.961 t_total_ms=94.369
+06-01 17:53:18.457 28723 29072 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=88.092
+06-01 17:53:18.607 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.497 t_payload_ms=95.477 t_total_ms=97.974
+06-01 17:53:18.607 28723 29073 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=91.413
+06-01 17:53:18.770 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.714 t_payload_ms=109.196 t_total_ms=111.911
+06-01 17:53:18.770 28723 29074 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=105.337
+06-01 17:53:18.914 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.569 t_payload_ms=90.256 t_total_ms=92.825
+06-01 17:53:18.914 28723 29075 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=85.742
+06-01 17:53:19.060 28723 29076 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=86.526
+06-01 17:53:19.061 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.636 t_payload_ms=91.825 t_total_ms=94.460
+06-01 17:53:19.206 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.225 t_payload_ms=91.264 t_total_ms=93.489
+06-01 17:53:19.206 28723 29077 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=87.293
+06-01 17:53:19.356 28723 29078 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=90.731
+06-01 17:53:19.356 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.861 t_payload_ms=95.246 t_total_ms=98.106
+06-01 17:53:19.504 28723 29079 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=90.788
+06-01 17:53:19.504 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.755 t_payload_ms=94.558 t_total_ms=97.313
+06-01 17:53:19.656 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.551 t_payload_ms=97.044 t_total_ms=99.595
+06-01 17:53:19.656 28723 29080 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=92.968
+06-01 17:53:19.816 28723 29081 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=99.287
+06-01 17:53:19.816 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.415 t_payload_ms=106.187 t_total_ms=108.601
+06-01 17:53:19.958 28723 29082 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=84.046
+06-01 17:53:19.958 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=3.585 t_payload_ms=86.035 t_total_ms=89.620
+06-01 17:53:20.101 28723 29083 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=85.599
+06-01 17:53:20.101 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.281 t_payload_ms=89.271 t_total_ms=91.552
+06-01 17:53:20.248 28723 29084 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=89.138
+06-01 17:53:20.248 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.400 t_payload_ms=92.848 t_total_ms=95.247
+06-01 17:53:20.401 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.397 t_payload_ms=99.232 t_total_ms=101.629
+06-01 17:53:20.401 28723 29085 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=94.529
+06-01 17:53:20.551 28723 29086 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=90.940
+06-01 17:53:20.552 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=3.331 t_payload_ms=95.269 t_total_ms=98.600
+06-01 17:53:20.696 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.745 t_payload_ms=91.061 t_total_ms=93.806
+06-01 17:53:20.696 28723 29087 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=85.459
+06-01 17:53:20.845 28723 29088 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=90.287
+06-01 17:53:20.845 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.268 t_payload_ms=94.658 t_total_ms=96.926
+06-01 17:53:20.985 28723 29089 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=84.900
+06-01 17:53:20.985 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.194 t_payload_ms=87.150 t_total_ms=89.344
+06-01 17:53:21.135 28723 29093 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=91.699
+06-01 17:53:21.135 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.257 t_payload_ms=95.869 t_total_ms=98.126
+06-01 17:53:21.279 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.163 t_payload_ms=89.615 t_total_ms=91.779
+06-01 17:53:21.279 28723 29096 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=86.797
+06-01 17:53:21.427 28723 29097 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=90.427
+06-01 17:53:21.427 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.569 t_payload_ms=94.482 t_total_ms=97.051
+06-01 17:53:21.574 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=52428800 payload_mb=50.0000 t_conn_ms=2.321 t_payload_ms=92.940 t_total_ms=95.261
+06-01 17:53:21.574 28723 29098 D CCCHarness: CCCDATA recv_complete payload_bytes=52428800 payload_mb=50.0000 server_recv_ms=90.485
+06-01 17:53:21.625 28583 28911 D CCCHarness: CCCDATA sweep_size_done payload_mb=50 reps=30
+06-01 17:53:21.794 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.334 t_payload_ms=166.450 t_total_ms=168.783
+06-01 17:53:21.794 28723 29099 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=165.158
+06-01 17:53:22.018 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=1.427 t_payload_ms=172.404 t_total_ms=173.831
+06-01 17:53:22.018 28723 29101 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=170.756
+06-01 17:53:22.243 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=1.814 t_payload_ms=172.336 t_total_ms=174.150
+06-01 17:53:22.243 28723 29102 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=169.925
+06-01 17:53:22.455 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=1.460 t_payload_ms=159.434 t_total_ms=160.894
+06-01 17:53:22.455 28723 29104 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=157.707
+06-01 17:53:22.666 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=1.383 t_payload_ms=158.825 t_total_ms=160.208
+06-01 17:53:22.666 28723 29105 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=156.873
+06-01 17:53:22.886 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=1.531 t_payload_ms=168.247 t_total_ms=169.778
+06-01 17:53:22.886 28723 29106 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=166.026
+06-01 17:53:23.115 28723 29107 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=171.040
+06-01 17:53:23.116 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.714 t_payload_ms=175.170 t_total_ms=177.883
+06-01 17:53:23.348 28723 29108 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=174.134
+06-01 17:53:23.348 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.140 t_payload_ms=178.992 t_total_ms=181.132
+06-01 17:53:23.579 28723 29109 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=173.567
+06-01 17:53:23.579 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.328 t_payload_ms=177.110 t_total_ms=179.438
+06-01 17:53:23.819 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.242 t_payload_ms=186.027 t_total_ms=188.269
+06-01 17:53:23.819 28723 29110 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=182.412
+06-01 17:53:24.054 28723 29111 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=175.659
+06-01 17:53:24.054 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=3.402 t_payload_ms=180.808 t_total_ms=184.209
+06-01 17:53:24.284 28723 29112 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=171.619
+06-01 17:53:24.284 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.265 t_payload_ms=175.935 t_total_ms=178.200
+06-01 17:53:24.512 28723 29113 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=169.533
+06-01 17:53:24.514 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.358 t_payload_ms=175.384 t_total_ms=177.742
+06-01 17:53:24.747 28723 29114 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=175.221
+06-01 17:53:24.747 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=3.209 t_payload_ms=178.745 t_total_ms=181.953
+06-01 17:53:24.974 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.215 t_payload_ms=172.435 t_total_ms=174.649
+06-01 17:53:24.974 28723 29115 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=168.657
+06-01 17:53:25.205 28723 29116 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=174.281
+06-01 17:53:25.205 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.142 t_payload_ms=177.747 t_total_ms=179.889
+06-01 17:53:25.432 28723 29117 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=169.358
+06-01 17:53:25.432 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.388 t_payload_ms=173.374 t_total_ms=175.762
+06-01 17:53:25.658 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.327 t_payload_ms=171.272 t_total_ms=173.599
+06-01 17:53:25.658 28723 29118 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=167.924
+06-01 17:53:25.884 28723 29119 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=168.081
+06-01 17:53:25.884 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=3.643 t_payload_ms=171.694 t_total_ms=175.337
+06-01 17:53:26.121 28723 29120 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=178.418
+06-01 17:53:26.121 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=3.082 t_payload_ms=181.839 t_total_ms=184.922
+06-01 17:53:26.355 28723 29122 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=173.373
+06-01 17:53:26.355 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=3.140 t_payload_ms=178.808 t_total_ms=181.947
+06-01 17:53:26.584 28723 29123 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=171.058
+06-01 17:53:26.584 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=3.045 t_payload_ms=174.684 t_total_ms=177.729
+06-01 17:53:26.813 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.333 t_payload_ms=175.527 t_total_ms=177.861
+06-01 17:53:26.813 28723 29126 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=171.429
+06-01 17:53:27.035 28723 29127 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=163.007
+06-01 17:53:27.035 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=3.255 t_payload_ms=166.622 t_total_ms=169.877
+06-01 17:53:27.275 28723 29128 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=181.863
+06-01 17:53:27.275 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.815 t_payload_ms=185.606 t_total_ms=188.420
+06-01 17:53:27.505 28723 29129 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=172.110
+06-01 17:53:27.506 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=3.338 t_payload_ms=176.168 t_total_ms=179.506
+06-01 17:53:27.737 28723 29130 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=173.398
+06-01 17:53:27.737 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.234 t_payload_ms=177.604 t_total_ms=179.838
+06-01 17:53:27.970 28723 29131 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=173.633
+06-01 17:53:27.970 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=3.368 t_payload_ms=178.177 t_total_ms=181.545
+06-01 17:53:28.199 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=2.316 t_payload_ms=174.578 t_total_ms=176.894
+06-01 17:53:28.199 28723 29132 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=171.250
+06-01 17:53:28.431 28723 29133 D CCCHarness: CCCDATA recv_complete payload_bytes=104857600 payload_mb=100.0000 server_recv_ms=174.058
+06-01 17:53:28.432 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=104857600 payload_mb=100.0000 t_conn_ms=3.258 t_payload_ms=177.986 t_total_ms=181.244
+06-01 17:53:28.483 28583 28911 D CCCHarness: CCCDATA sweep_size_done payload_mb=100 reps=30
+06-01 17:53:28.739 28723 29134 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=249.775
+06-01 17:53:28.739 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.222 t_payload_ms=253.721 t_total_ms=255.943
+06-01 17:53:29.051 28723 29135 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=252.983
+06-01 17:53:29.051 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.245 t_payload_ms=257.811 t_total_ms=260.056
+06-01 17:53:29.371 28723 29140 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=262.343
+06-01 17:53:29.372 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.513 t_payload_ms=266.516 t_total_ms=269.029
+06-01 17:53:29.679 28723 29141 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=249.017
+06-01 17:53:29.679 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.243 t_payload_ms=253.532 t_total_ms=255.775
+06-01 17:53:29.986 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=3.820 t_payload_ms=252.080 t_total_ms=255.899
+06-01 17:53:29.986 28723 29142 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=248.214
+06-01 17:53:30.317 28723 29143 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=274.710
+06-01 17:53:30.318 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.034 t_payload_ms=278.103 t_total_ms=280.137
+06-01 17:53:30.626 28723 29144 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=249.725
+06-01 17:53:30.627 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.496 t_payload_ms=254.416 t_total_ms=256.911
+06-01 17:53:30.940 28723 29145 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=254.499
+06-01 17:53:30.940 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=3.111 t_payload_ms=258.529 t_total_ms=261.640
+06-01 17:53:31.252 28723 29146 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=253.144
+06-01 17:53:31.252 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=3.519 t_payload_ms=257.122 t_total_ms=260.642
+06-01 17:53:31.565 28723 29147 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=253.132
+06-01 17:53:31.565 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.574 t_payload_ms=258.807 t_total_ms=261.381
+06-01 17:53:31.884 28723 29148 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=256.929
+06-01 17:53:31.884 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.425 t_payload_ms=264.689 t_total_ms=267.114
+06-01 17:53:32.193 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=3.348 t_payload_ms=254.545 t_total_ms=257.892
+06-01 17:53:32.194 28723 29149 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=250.986
+06-01 17:53:32.514 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.608 t_payload_ms=266.364 t_total_ms=268.973
+06-01 17:53:32.514 28723 29150 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=261.707
+06-01 17:53:32.826 28723 29153 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=252.731
+06-01 17:53:32.827 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.684 t_payload_ms=258.002 t_total_ms=260.686
+06-01 17:53:33.130 28723 29154 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=244.541
+06-01 17:53:33.130 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.443 t_payload_ms=248.356 t_total_ms=250.799
+06-01 17:53:33.435 28723 29155 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=247.318
+06-01 17:53:33.435 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.356 t_payload_ms=251.912 t_total_ms=254.268
+06-01 17:53:33.739 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.394 t_payload_ms=249.692 t_total_ms=252.085
+06-01 17:53:33.739 28723 29156 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=246.012
+06-01 17:53:34.047 28723 29157 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=250.080
+06-01 17:53:34.048 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.282 t_payload_ms=254.817 t_total_ms=257.099
+06-01 17:53:34.361 28723 29158 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=253.893
+06-01 17:53:34.361 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=3.134 t_payload_ms=257.725 t_total_ms=260.859
+06-01 17:53:34.677 28723 29159 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=258.394
+06-01 17:53:34.677 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.501 t_payload_ms=262.489 t_total_ms=264.989
+06-01 17:53:34.982 28723 29160 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=247.277
+06-01 17:53:34.982 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.523 t_payload_ms=251.230 t_total_ms=253.753
+06-01 17:53:35.291 28723 29162 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=250.938
+06-01 17:53:35.291 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.225 t_payload_ms=254.910 t_total_ms=257.135
+06-01 17:53:35.597 28723 29163 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=248.049
+06-01 17:53:35.597 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.075 t_payload_ms=251.991 t_total_ms=254.066
+06-01 17:53:35.911 28723 29164 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=254.097
+06-01 17:53:35.911 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=3.416 t_payload_ms=258.359 t_total_ms=261.775
+06-01 17:53:36.227 28723 29165 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=258.013
+06-01 17:53:36.227 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.286 t_payload_ms=262.464 t_total_ms=264.750
+06-01 17:53:36.536 28723 29166 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=250.377
+06-01 17:53:36.536 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.432 t_payload_ms=254.916 t_total_ms=257.348
+06-01 17:53:36.851 28723 29167 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=255.014
+06-01 17:53:36.852 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=3.408 t_payload_ms=260.272 t_total_ms=263.680
+06-01 17:53:37.166 28723 29168 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=254.772
+06-01 17:53:37.166 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=3.291 t_payload_ms=259.075 t_total_ms=262.366
+06-01 17:53:37.473 28723 29169 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=249.317
+06-01 17:53:37.473 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.439 t_payload_ms=254.001 t_total_ms=256.440
+06-01 17:53:37.782 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=157286400 payload_mb=150.0000 t_conn_ms=2.628 t_payload_ms=254.647 t_total_ms=257.275
+06-01 17:53:37.782 28723 29172 D CCCHarness: CCCDATA recv_complete payload_bytes=157286400 payload_mb=150.0000 server_recv_ms=250.628
+06-01 17:53:37.833 28583 28911 D CCCHarness: CCCDATA sweep_size_done payload_mb=150 reps=30
+06-01 17:53:38.174 28723 29173 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=334.944
+06-01 17:53:38.174 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.403 t_payload_ms=338.558 t_total_ms=340.961
+06-01 17:53:38.570 28723 29174 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=336.074
+06-01 17:53:38.570 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=3.311 t_payload_ms=340.201 t_total_ms=343.512
+06-01 17:53:38.973 28723 29175 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=345.078
+06-01 17:53:38.973 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.402 t_payload_ms=348.903 t_total_ms=351.305
+06-01 17:53:39.371 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.502 t_payload_ms=343.584 t_total_ms=346.087
+06-01 17:53:39.371 28723 29176 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=339.288
+06-01 17:53:39.755 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=6.410 t_payload_ms=326.575 t_total_ms=332.984
+06-01 17:53:39.755 28723 29178 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=325.391
+06-01 17:53:40.140 28723 29182 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=326.457
+06-01 17:53:40.140 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.326 t_payload_ms=330.941 t_total_ms=333.267
+06-01 17:53:40.535 28723 29183 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=336.672
+06-01 17:53:40.536 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=3.175 t_payload_ms=340.528 t_total_ms=343.703
+06-01 17:53:40.932 28723 29184 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=336.189
+06-01 17:53:40.932 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=3.326 t_payload_ms=341.404 t_total_ms=344.730
+06-01 17:53:41.325 28723 29185 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=333.528
+06-01 17:53:41.325 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=3.333 t_payload_ms=338.048 t_total_ms=341.381
+06-01 17:53:41.714 28723 29186 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=331.085
+06-01 17:53:41.714 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.452 t_payload_ms=335.194 t_total_ms=337.646
+06-01 17:53:42.109 28723 29187 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=335.672
+06-01 17:53:42.109 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=3.009 t_payload_ms=339.994 t_total_ms=343.003
+06-01 17:53:42.503 28723 29188 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=336.209
+06-01 17:53:42.503 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.442 t_payload_ms=340.228 t_total_ms=342.670
+06-01 17:53:42.888 28723 29189 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=326.977
+06-01 17:53:42.888 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.579 t_payload_ms=330.876 t_total_ms=333.455
+06-01 17:53:43.277 28723 29190 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=330.525
+06-01 17:53:43.278 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.557 t_payload_ms=334.829 t_total_ms=337.386
+06-01 17:53:43.671 28723 29191 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=334.879
+06-01 17:53:43.672 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.602 t_payload_ms=339.761 t_total_ms=342.363
+06-01 17:53:44.059 28723 29192 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=329.913
+06-01 17:53:44.060 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.343 t_payload_ms=334.231 t_total_ms=336.573
+06-01 17:53:44.453 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.652 t_payload_ms=338.385 t_total_ms=341.037
+06-01 17:53:44.453 28723 29193 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=333.988
+06-01 17:53:44.842 28723 29194 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=331.235
+06-01 17:53:44.842 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.538 t_payload_ms=335.501 t_total_ms=338.039
+06-01 17:53:45.238 28723 29195 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=336.271
+06-01 17:53:45.238 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=3.493 t_payload_ms=340.966 t_total_ms=344.458
+06-01 17:53:45.628 28723 29196 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=331.604
+06-01 17:53:45.628 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.497 t_payload_ms=335.905 t_total_ms=338.402
+06-01 17:53:46.023 28723 29197 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=336.823
+06-01 17:53:46.023 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=3.052 t_payload_ms=341.194 t_total_ms=344.246
+06-01 17:53:46.417 28723 29198 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=333.245
+06-01 17:53:46.417 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=3.689 t_payload_ms=338.111 t_total_ms=341.800
+06-01 17:53:46.806 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.292 t_payload_ms=335.189 t_total_ms=337.481
+06-01 17:53:46.806 28723 29199 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=331.550
+06-01 17:53:47.216 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=3.196 t_payload_ms=355.375 t_total_ms=358.571
+06-01 17:53:47.216 28723 29200 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=351.190
+06-01 17:53:47.604 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.586 t_payload_ms=334.506 t_total_ms=337.093
+06-01 17:53:47.604 28723 29203 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=330.775
+06-01 17:53:47.993 28723 29204 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=330.839
+06-01 17:53:47.993 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.582 t_payload_ms=334.870 t_total_ms=337.452
+06-01 17:53:48.395 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.328 t_payload_ms=348.111 t_total_ms=350.440
+06-01 17:53:48.395 28723 29205 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=344.591
+06-01 17:53:48.785 28723 29206 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=331.578
+06-01 17:53:48.786 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.627 t_payload_ms=336.174 t_total_ms=338.801
+06-01 17:53:49.175 28723 29207 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=331.895
+06-01 17:53:49.176 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=2.587 t_payload_ms=335.776 t_total_ms=338.363
+06-01 17:53:49.588 28723 29208 D CCCHarness: CCCDATA recv_complete payload_bytes=209715200 payload_mb=200.0000 server_recv_ms=354.359
+06-01 17:53:49.588 28583 28911 D CCCHarness: CCCDATA send_complete tag=fg_sweep ack=1 payload_bytes=209715200 payload_mb=200.0000 t_conn_ms=3.640 t_payload_ms=356.823 t_total_ms=360.463
+06-01 17:53:49.639 28583 28911 D CCCHarness: CCCDATA sweep_size_done payload_mb=200 reps=30
+06-01 17:53:49.639 28583 28911 D CCCHarness: CCCDATA sweep_done

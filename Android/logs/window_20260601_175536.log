@@ -1,0 +1,211 @@
+--------- beginning of main
+06-01 17:55:36.584 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:55:36.617 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:55:36.617 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:55:36.623 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.587 t_payload_ms=4.057 t_total_ms=5.643
+06-01 17:55:36.624 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=7 send_result_ms=5.643
+06-01 17:55:36.624 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=5.643
+06-01 17:55:36.625 28723 29311 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.532
+06-01 17:55:44.737 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:55:44.783 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:55:44.783 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:55:44.794 28723 29366 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.700
+06-01 17:55:44.795 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.664 t_payload_ms=10.141 t_total_ms=11.805
+06-01 17:55:44.796 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=14 send_result_ms=11.805
+06-01 17:55:44.796 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=11.805
+06-01 17:55:52.882 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:55:52.943 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:55:52.943 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:55:52.951 28723 29440 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.047
+06-01 17:55:52.951 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=2.553 t_payload_ms=5.457 t_total_ms=8.010
+06-01 17:55:52.952 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=9 send_result_ms=8.010
+06-01 17:55:52.952 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=8.010
+06-01 17:56:01.009 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:56:01.046 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:56:01.046 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:56:01.053 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=2.053 t_payload_ms=4.643 t_total_ms=6.696
+06-01 17:56:01.054 28723 29483 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.483
+06-01 17:56:01.054 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=8 send_result_ms=6.696
+06-01 17:56:01.054 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=6.696
+06-01 17:56:09.144 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:56:09.211 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:56:09.211 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:56:09.217 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.324 t_payload_ms=4.117 t_total_ms=5.441
+06-01 17:56:09.217 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=6 send_result_ms=5.441
+06-01 17:56:09.218 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=5.441
+06-01 17:56:09.218 28723 29529 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.363
+06-01 17:56:17.286 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:56:17.343 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:56:17.343 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:56:17.356 28723 29571 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=5.160
+06-01 17:56:17.359 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.701 t_payload_ms=12.663 t_total_ms=14.365
+06-01 17:56:17.360 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=17 send_result_ms=14.365
+06-01 17:56:17.361 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=14.365
+06-01 17:56:25.421 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:56:25.468 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:56:25.468 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:56:25.479 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=6.256 t_payload_ms=3.570 t_total_ms=9.826
+06-01 17:56:25.479 28723 29618 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.697
+06-01 17:56:25.479 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=11 send_result_ms=9.826
+06-01 17:56:25.479 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=9.826
+06-01 17:56:33.556 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:56:33.619 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:56:33.619 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:56:33.629 28723 29675 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.879
+06-01 17:56:33.630 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=2.779 t_payload_ms=7.241 t_total_ms=10.020
+06-01 17:56:33.630 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=11 send_result_ms=10.020
+06-01 17:56:33.630 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=10.020
+06-01 17:56:41.690 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:56:41.738 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:56:41.738 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:56:41.745 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.876 t_payload_ms=4.397 t_total_ms=6.273
+06-01 17:56:41.745 28723 29726 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.875
+06-01 17:56:41.746 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=7 send_result_ms=6.273
+06-01 17:56:41.746 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=6.273
+06-01 17:56:49.822 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:56:49.875 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:56:49.875 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:56:49.885 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.880 t_payload_ms=6.785 t_total_ms=8.665
+06-01 17:56:49.885 28723 29769 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.095
+06-01 17:56:49.887 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=11 send_result_ms=8.665
+06-01 17:56:49.887 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=8.665
+06-01 17:56:57.953 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:56:57.998 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:56:57.998 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:56:58.013 28723 29821 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=8.805
+06-01 17:56:58.014 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.437 t_payload_ms=10.962 t_total_ms=15.398
+06-01 17:56:58.015 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=16 send_result_ms=15.398
+06-01 17:56:58.015 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=15.398
+06-01 17:57:06.093 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:57:06.128 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:57:06.128 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:57:06.139 28723 29871 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.724
+06-01 17:57:06.141 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.581 t_payload_ms=7.295 t_total_ms=11.876
+06-01 17:57:06.142 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=13 send_result_ms=11.876
+06-01 17:57:06.142 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=11.876
+06-01 17:57:14.226 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:57:14.284 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:57:14.284 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:57:14.293 28723 29914 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.516
+06-01 17:57:14.295 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=2.476 t_payload_ms=7.988 t_total_ms=10.464
+06-01 17:57:14.296 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=12 send_result_ms=10.464
+06-01 17:57:14.296 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=10.464
+06-01 17:57:22.365 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:57:22.412 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:57:22.413 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:57:22.423 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=3.309 t_payload_ms=7.099 t_total_ms=10.408
+06-01 17:57:22.423 28723 29964 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=5.676
+06-01 17:57:22.424 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=12 send_result_ms=10.408
+06-01 17:57:22.424 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=10.408
+06-01 17:57:30.507 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:57:30.555 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:57:30.555 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:57:30.564 28723 30009 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.033
+06-01 17:57:30.567 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.512 t_payload_ms=9.866 t_total_ms=11.378
+06-01 17:57:30.568 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=14 send_result_ms=11.378
+06-01 17:57:30.568 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=11.378
+06-01 17:57:38.641 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:57:38.677 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:57:38.677 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:57:38.693 28723 30051 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=5.641
+06-01 17:57:38.694 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=8.359 t_payload_ms=7.588 t_total_ms=15.947
+06-01 17:57:38.695 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=17 send_result_ms=15.947
+06-01 17:57:38.695 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=15.947
+06-01 17:57:46.783 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:57:46.820 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:57:46.820 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:57:46.829 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.573 t_payload_ms=5.699 t_total_ms=7.272
+06-01 17:57:46.830 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=10 send_result_ms=7.272
+06-01 17:57:46.830 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=7.272
+06-01 17:57:46.832 28723 30097 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.843
+06-01 17:57:54.922 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:57:54.967 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:57:54.967 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:57:54.972 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.409 t_payload_ms=3.285 t_total_ms=4.694
+06-01 17:57:54.972 28723 30220 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=1.806
+06-01 17:57:54.972 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=5 send_result_ms=4.694
+06-01 17:57:54.972 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=4.694
+06-01 17:58:03.089 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:58:03.139 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:58:03.139 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:58:03.146 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.293 t_payload_ms=4.469 t_total_ms=5.762
+06-01 17:58:03.147 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=7 send_result_ms=5.762
+06-01 17:58:03.147 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=5.762
+06-01 17:58:03.148 28723 30268 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.625
+06-01 17:58:11.213 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:58:11.248 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:58:11.248 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:58:11.257 28723 30320 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.840
+06-01 17:58:11.258 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.929 t_payload_ms=6.948 t_total_ms=8.877
+06-01 17:58:11.258 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=10 send_result_ms=8.877
+06-01 17:58:11.259 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=8.877
+06-01 17:58:19.372 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:58:19.418 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:58:19.418 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:58:19.430 28723 30359 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.610
+06-01 17:58:19.430 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.579 t_payload_ms=9.814 t_total_ms=11.393
+06-01 17:58:19.431 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=13 send_result_ms=11.393
+06-01 17:58:19.431 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=11.393
+06-01 17:58:27.529 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:58:27.572 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:58:27.572 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:58:27.578 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=1.399 t_payload_ms=4.283 t_total_ms=5.682
+06-01 17:58:27.579 28723 30406 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.816
+06-01 17:58:27.579 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=7 send_result_ms=5.682
+06-01 17:58:27.580 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=5.682
+06-01 17:58:35.663 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:58:35.720 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:58:35.720 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:58:35.732 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=2.581 t_payload_ms=8.254 t_total_ms=10.835
+06-01 17:58:35.732 28723 30453 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.637
+06-01 17:58:35.732 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=12 send_result_ms=10.835
+06-01 17:58:35.732 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=10.835
+06-01 17:58:43.802 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:58:43.841 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:58:43.841 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:58:43.852 28723 30495 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=2.200
+06-01 17:58:43.853 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.589 t_payload_ms=7.551 t_total_ms=12.140
+06-01 17:58:43.854 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=14 send_result_ms=12.140
+06-01 17:58:43.854 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=12.140
+06-01 17:58:51.932 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:58:51.975 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:58:51.975 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:58:51.987 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=2.133 t_payload_ms=8.388 t_total_ms=10.521
+06-01 17:58:51.988 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=13 send_result_ms=10.521
+06-01 17:58:51.988 28723 30537 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=4.636
+06-01 17:58:51.988 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=10.521
+06-01 17:59:00.069 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:59:00.116 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:59:00.116 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:59:00.126 28723 30580 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.758
+06-01 17:59:00.126 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.471 t_payload_ms=4.973 t_total_ms=9.444
+06-01 17:59:00.126 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=11 send_result_ms=9.444
+06-01 17:59:00.127 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=9.444
+06-01 17:59:08.201 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:59:08.246 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:59:08.246 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:59:08.259 28723 30626 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.764
+06-01 17:59:08.260 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.301 t_payload_ms=8.215 t_total_ms=12.515
+06-01 17:59:08.261 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=15 send_result_ms=12.515
+06-01 17:59:08.261 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=12.515
+06-01 17:59:16.335 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:59:16.406 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:59:16.407 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:59:16.421 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.723 t_payload_ms=8.898 t_total_ms=13.621
+06-01 17:59:16.421 28723 30670 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=6.002
+06-01 17:59:16.421 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=15 send_result_ms=13.621
+06-01 17:59:16.421 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=13.621
+06-01 17:59:24.462 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:59:24.504 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:59:24.504 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:59:24.518 28723 30718 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=7.212
+06-01 17:59:24.520 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.829 t_payload_ms=10.295 t_total_ms=15.124
+06-01 17:59:24.521 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=18 send_result_ms=15.124
+06-01 17:59:24.521 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=15.124
+06-01 17:59:32.597 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=1 gated=false max_retries=0
+06-01 17:59:32.634 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=false payload_mb=1.0000 attempt=0
+06-01 17:59:32.634 28583 28833 D CCCHarness: CCCDATA worker_recovery step=S5 run_index=0
+06-01 17:59:32.648 28723 30757 D CCCHarness: CCCDATA recv_complete payload_bytes=1048576 payload_mb=1.0000 server_recv_ms=3.512
+06-01 17:59:32.648 28583 28833 D CCCHarness: CCCDATA send_complete tag=bg_worker_unguarded ack=1 payload_bytes=1048576 payload_mb=1.0000 t_conn_ms=4.535 t_payload_ms=8.450 t_total_ms=12.984
+06-01 17:59:32.648 28583 28833 D CCCHarness: CCCDATA worker_window_observed run_index=0 observed_window_ms=14 send_result_ms=12.984
+06-01 17:59:32.648 28583 28833 D CCCHarness: CCCDATA worker_complete run_index=0 outcome=success send_ms=12.984

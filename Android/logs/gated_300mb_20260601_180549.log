@@ -1,0 +1,5 @@
+--------- beginning of main
+06-01 18:05:51.563 28583 28583 D CCCHarness: CCCDATA cmd_reconnect payload_mb=300 gated=true max_retries=20
+06-01 18:05:51.630 28583 28833 D CCCHarness: CCCDATA worker_start step=S4 run_index=0 gated=true payload_mb=300.0000 attempt=0
+06-01 18:05:51.630 28583 28833 D CCCHarness: CCCDATA worker_gated_skip step=S4 run_index=0 reason=not_foreground
+06-01 18:06:49.513 28723 28723 D CCCHarness: CCCDATA service_destroyed pid=28723

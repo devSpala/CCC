@@ -372,19 +372,6 @@ For questions about CCC, the antipattern characterization, or implementation gui
 - Examine CCCHarness for minimal reproduction case
 - Check AppServiceCommunicator.cs for current implementation patterns
 
-## License & Citation
-
-If using this research in academic or industrial settings, cite as:
-
-```bibtex
-@inproceedings{Mozumder2024CCC,
-  title = {Call Cycle Creation: Identifying and Resolving a Migration-Era 
-           IPC Antipattern in Windows IoT Deployments},
-  author = {Mozumder, Md. Shamsul Arifin and Adnan, Muhammad Abdullah},
-  year = {2024},
-  note = {Artifact available at https://github.com/arifincsebuet/CCC}
-}
-```
 
 ## Glossary
 

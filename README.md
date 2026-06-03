@@ -66,15 +66,3 @@ cd Figures && python3 plot_paper_figures_v4.py
 | Remedy | Foreground gate (`CoreWindow.Activated`) | Same gate principle, not needed |
 
 ---
-
-## Citation
-
-```bibtex
-@inproceedings{Mozumder2026CCC,
-  title     = {Call Cycle Creation: A Migration-Era, Lifecycle-Induced IPC Failure
-               in Hybrid {UWP--WPF} Windows {IoT} Deployments},
-  author    = {Mozumder, Md. Shamsul Arifin and Adnan, Muhammad Abdullah},
-  year      = {2026},
-  note      = {Artifact: \url{https://github.com/arifincsebuet/CCC}}
-}
-```

@@ -157,6 +157,14 @@ namespace BridgeHandler
   
 
             {
+
+                if (!IsSingleInstance())
+                {
+                    Console.WriteLine("Instance exists already!");
+                    //Close();
+                    return;
+                }
+
                 Console.WriteLine("One instance"); // Continue with program.
 
                 AppServiceCommunicator communicator = new AppServiceCommunicator();

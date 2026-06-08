@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.AppService;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.System.Threading;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -26,6 +28,7 @@ namespace BridgeTest
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private ThreadPoolTimer _threadPoolTimer;
         private AppServiceConnection _appService;
         private const string APP_SERVICE_NAME = "com.samsung.bridgecom";
         private static readonly string PACKAGE_FAMILY_NAME = Windows.ApplicationModel.Package.Current.Id.FamilyName;
@@ -67,7 +70,12 @@ namespace BridgeTest
             this.InitializeComponent();
         }
 
-        private async void Button_Click(object sender, RoutedEventArgs e)
+        private async void Button_Click(object sender, RoutedEventArgs e) =>
+            //here ari
+
+            _threadPoolTimer = ThreadPoolTimer.CreatePeriodicTimer(Ping, TimeSpan.FromSeconds(1)); //1 seconds
+
+        private async void Ping(object state)
         {
             await FullTrustProcessLauncher.LaunchFullTrustProcessForCurrentAppAsync();
         }
@@ -95,6 +103,9 @@ namespace BridgeTest
         }
         private async void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            _threadPoolTimer?.Cancel();
+            _threadPoolTimer = null;
+            //hereari
             await Init();
             ValueSet request = new ValueSet
                 {

@@ -1,0 +1,8 @@
+"event","elapsed_s","wallclock","pid","name"
+"spawn","0.004","2026-06-04T21:06:52.2897312+06:00","37708","backgroundTaskHost.exe"
+"spawn","0.004","2026-06-04T21:06:52.2897312+06:00","32904","backgroundTaskHost.exe"
+"spawn","0.004","2026-06-04T21:06:52.2897312+06:00","31220","notepad++.exe"
+"spawn","0.004","2026-06-04T21:06:52.2897312+06:00","24912","backgroundTaskHost.exe"
+"spawn","0.004","2026-06-04T21:06:52.2897312+06:00","30960","backgroundTaskHost.exe"
+"spawn","0.004","2026-06-04T21:06:52.2897312+06:00","20176","BridgeTest.exe"
+"spawn","0.004","2026-06-04T21:06:52.2897312+06:00","20340","BridgeHandler.exe"

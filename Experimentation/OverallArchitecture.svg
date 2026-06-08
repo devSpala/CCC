@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ============================================================================
+  Call Cycle Creation (CCC) - Hybrid UWP/WPF IoT architecture and failure loop
+  ============================================================================
+
+  WHAT THIS DIAGRAM SHOWS
+  The hybrid Windows architecture from the paper, with the CCC loop overlaid.
+
+    * UWP (Pid1): sandboxed UI host process. Cannot reach the IoT device
+      directly, because the H264 hardware codec is unsupported inside the UWP
+      sandbox. (Blue ellipse, upper left.)
+    * WPF / Win32 (Pid2): persistent companion process with full codec access;
+      it actually drives the IoT device. Only ONE WPF instance may be alive at
+      a time (application single-instance invariant). (Green ellipse, right.)
+    * Background service: the AppService relay (in-proc or out-proc) that
+      carries IPC between UWP and WPF. (Amber rounded rect, top right.)
+    * IoT device: camera or sensor. Media is routed UWP then service then WPF
+      then device; the direct UWP-to-device link is prohibited. (Gray rounded
+      rect, bottom center.)
+
+  THE CCC LOOP (red self-loop on the UWP node, and the red panel):
+  Resume fires; UWP spawns a WPF process; a WPF instance is already alive; the
+  new process signals the incumbent over the named pipe and self-terminates
+  immediately; that child exit re-fires the Resume handler (the UWP lifecycle
+  bug); the loop repeats forever. Heavy tasks or REST calls in the resume path
+  amplify CPU, power, and heat cost.
+
+  COLOR KEY (hex chosen to read on light and dark backgrounds)
+    Blue   fill #E6F1FB  stroke #185FA5  text #0C447C : UWP (Pid1)
+    Green  fill #EAF3DE  stroke #3B6D11  text #173404 : WPF / Win32 (Pid2)
+    Amber  fill #FAEEDA  stroke #854F0B  text #633806 : Background service
+    Gray   fill #F1EFE8  stroke #5F5E5A  text #2C2C2A : IoT device (neutral)
+    Red    fill #FCEBEB  stroke #A32D2D  text #501313 : CCC loop panel
+    Neutral connector stroke #73726c : normal IPC and data links
+    Red dashed stroke #A32D2D : the prohibited direct UWP-device link (X marked)
+    Red loop arc #E24B4A and X mark #A32D2D : failure highlight
+
+  GEOMETRY
+    viewBox 0 0 680 540. Safe area x 40..640. Transparent background.
+    All text uses dominant-baseline:central so labels center in their slots.
+  ============================================================================
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="540" viewBox="0 0 680 540"
+     role="img" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Hybrid UWP-WPF IoT architecture and the Call Cycle Creation loop</title>
+  <desc>UWP (Pid1) and WPF (Pid2) communicate via a background AppService; UWP cannot
+  reach the IoT device directly due to H264 codec limits, so media routes through WPF.
+  A resume lifecycle bug makes UWP repeatedly spawn WPF processes that immediately
+  self-terminate, forming the CCC loop.</desc>
+
+  <!-- Arrowhead marker. context-stroke makes the head inherit each line's color. -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- ===================== NODES ===================== -->
+
+  <!-- Background service: AMBER rounded rect, top-right. The AppService relay. -->
+  <g>
+    <rect x="440" y="40" width="200" height="56" rx="8" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+    <text x="540" y="60" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#633806">Background service</text>
+    <text x="540" y="78" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#854F0B">In-proc / out-proc</text>
+  </g>
+
+  <!-- UWP (Pid1): BLUE ellipse, upper-left. Sandboxed UI host; origin of the loop. -->
+  <g>
+    <ellipse cx="160" cy="150" rx="120" ry="56" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+    <text x="160" y="142" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#0C447C">UWP (Pid1)</text>
+    <text x="160" y="162" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#185FA5">Sandboxed UI host</text>
+  </g>
+
+  <!-- WPF/Win32 (Pid2): GREEN ellipse, mid-right. Persistent, full codec, drives device. -->
+  <g>
+    <ellipse cx="540" cy="250" rx="100" ry="52" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+    <text x="540" y="242" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#173404">WPF / Win32 (Pid2)</text>
+    <text x="540" y="262" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#3B6D11">Persistent, full codec</text>
+  </g>
+
+  <!-- IoT device: GRAY rounded rect, bottom-center. Neutral endpoint. -->
+  <g>
+    <rect x="250" y="430" width="180" height="56" rx="8" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+    <text x="340" y="450" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="500" fill="#2C2C2A">IoT device</text>
+    <text x="340" y="468" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#5F5E5A">Camera / sensor</text>
+  </g>
+
+  <!-- ===================== CONNECTORS ===================== -->
+
+  <!-- UWP <- Background service : neutral gray, one-way (relay delivers to UWP). -->
+  <line x1="270" y1="120" x2="438" y2="80" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Background service  <=>  WPF : neutral gray, bidirectional IPC. -->
+  <line x1="540" y1="98" x2="540" y2="196" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+
+  <!-- PROHIBITED direct UWP  <=>  IoT link : RED DASHED, crossed out by the X below.
+       Label sits clear of the line in open space to its right. -->
+  <text x="260" y="280" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#A32D2D">No H264 in UWP</text>
+  <line x1="225" y1="200" x2="320" y2="426" stroke="#A32D2D" stroke-width="1.5" stroke-dasharray="5 5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <!-- Red X mark on the prohibited link -->
+  <g stroke="#A32D2D" stroke-width="3" stroke-linecap="round">
+    <line x1="258" y1="300" x2="278" y2="320"/>
+    <line x1="278" y1="300" x2="258" y2="320"/>
+  </g>
+
+  <!-- WPF  <=>  IoT device : neutral gray, bidirectional (the ALLOWED media path). -->
+  <line x1="455" y1="285" x2="362" y2="428" stroke="#73726c" stroke-width="1.5" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+
+  <!-- ===================== CCC LOOP HIGHLIGHT ===================== -->
+
+  <!-- Red self-loop arc on the UWP node = the buggy Resume re-fire (repeats forever). -->
+  <path d="M120 196 C 70 250, 70 250, 110 196" fill="none" stroke="#E24B4A" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="86" y="250" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#A32D2D">Resume</text>
+
+  <!-- Red panel: plain-language statement of the loop mechanism. -->
+  <g>
+    <rect x="40" y="330" width="600" height="74" rx="8" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+    <text x="60" y="352" dominant-baseline="central" font-size="14" font-weight="500" fill="#501313">Call Cycle Creation loop (UWP lifecycle bug)</text>
+    <text x="60" y="378" dominant-baseline="central" font-size="12" fill="#A32D2D">Resume fires &#8594; spawn WPF &#8594; incumbent already alive &#8594; new process signals it &amp; self-terminates</text>
+    <text x="60" y="394" dominant-baseline="central" font-size="12" fill="#A32D2D">&#8594; child exit re-fires Resume &#8594; repeat forever. Heavy/REST work in the path burns CPU, power, heat.</text>
+  </g>
+</svg>

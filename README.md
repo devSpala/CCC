@@ -22,7 +22,15 @@ CCC/
 │   ├── BridgeHandler/         WPF service (PID2) — single-instance guard, AppService provider
 │   ├── Communicator_OutProc/  Out-of-process background task
 │   ├── BridgeInstaller/       MSIX packaging (Desktop Bridge)
-│   └── README.md              Windows-specific build and run guide
+│   ├── Scripts/               PowerShell measurement & trace-capture tooling
+│   │   ├── find_ccc_procs.ps1     Discovers the churning (re-firing) process image names
+│   │   └── capture_ccc_v2.ps1     Captures spawn/exit timeline + per-PID CPU
+│   ├── Traces/                Committed reference captures (90 s window)
+│   │   ├── proc_events.csv        CCC active — 36 WPF re-launches
+│   │   ├── cpu_trace.csv          CCC active — per-sample CPU / live-process count
+│   │   ├── proc_events_idle.csv   Idle baseline — 0 re-launches (control)
+│   │   └── cpu_trace_idle.csv     Idle baseline — per-sample CPU
+│   └── README.md              Windows build, run, capture, and result-generation guide
 │
 ├── Android/                   AndroidCCCHarness — cross-platform control measurement
 │   ├── app/src/main/java/com/example/myapplication/
@@ -35,7 +43,8 @@ CCC/
 │   └── README.md              Android build, run, and measurement guide
 │
 ├── Figures/
-│   └── plot_paper_figures_v4.py   Generates all 7 paper figures from the Windows data
+│   └── plot_paper_figures_v6.py   Generates all 7 paper figures (re-fire timeline hard-coded
+│                                  from the committed Windows traces)
 │
 └── README.md                  This file
 ```
@@ -50,7 +59,7 @@ CCC/
 
 **Regenerate the paper figures** — install matplotlib/numpy, then:
 ```bash
-cd Figures && python3 plot_paper_figures_v4.py
+cd Figures && python3 plot_paper_figures_v6.py
 ```
 
 ---

@@ -110,13 +110,15 @@ $$P^* = \left(\frac{T_{\text{bg}} - T_{\text{conn}}}{\kappa}\right)^{1/\alpha} \
 
 ### CPU Overhead Amplification
 
-Measured CPU overhead factor:
+Model-calibrated CPU overhead factor:
 
 $$\Phi = \frac{\overline{u}_{\text{CCC}}}{\overline{u}_{\text{idle}}} \approx 11.6\times$$
 
-- **CCC active**: 13.1% sustained CPU utilization
-- **Idle**: 1.1% CPU utilization
-- Cycle frequency: ~0.167 Hz (6-second periodicity)
+- **CCC active**: 13.1% sustained CPU utilization (model-calibrated estimate; see note below)
+- **Idle**: 1.1% CPU utilization (assumed model input)
+- Measured re-fire rate: **~0.4 Hz mean** (36 re-launches in 90 s), occurring in bursts at a median inter-launch interval of **~1.1 s** with longer gaps between bursts; each WPF process lives a median **~0.5 s** before the single-instance guard terminates it
+
+> **Note on Φ.** Φ ≈ 11.6× is a *model-calibrated estimate*, not a directly sampled CPU measurement. The re-fire **mechanism and its timing are directly measured** (see [Result Generation](#result-generation-process) below — 36 re-launches vs. 0 in the idle control). Because each WPF process lives only ~0.5 s, accurate per-process CPU attribution requires kernel-level (ETW) or in-process tracing, which is listed as future work. The capture scripts record per-PID `TotalProcessorTime`, but at a 250 ms sampling interval this undercounts the short-lived processes, so Φ remains an estimate while the re-fire count is exact.
 
 ### AppService Overhead vs. Named-Pipe
 
@@ -234,6 +236,10 @@ BridgeTest.sln
 │   ├── Package.appxmanifest MSIX manifest with FullTrust grant
 │   ├── BridgeInstaller.wapproj Packaging project
 │   └── Images/              Application icons and assets
+│
+└── Scripts/                 (Measurement & trace-capture tooling)
+    ├── find_ccc_procs.ps1   Discover the churning process image names
+    └── capture_ccc_v2.ps1   Capture spawn/exit timeline + per-PID CPU
 
 ```
 
@@ -282,6 +288,127 @@ private void CoreApplication_Resuming(object sender, object e)
 }
 ```
 
+## Measurement Scripts
+
+The `Scripts/` folder contains the PowerShell tooling used to directly measure the CCC re-fire loop on a live Windows host. Both scripts are self-contained, require no external dependencies, and must be run from an **elevated** PowerShell session. Because they are unsigned, invoke them with an execution-policy bypass scoped to the single process:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\<script>.ps1 [options]
+```
+
+### Script 1 — `find_ccc_procs.ps1` (discovery)
+
+Identifies the *real* process image names involved in the cycle. The image name of the WPF child and the background-task host is environment-dependent (e.g. a `dotnet`-hosted process or a generic `backgroundTaskHost.exe`), so this script is run **first**, while the cycle is being forced, to learn what to capture.
+
+It snapshots all running processes 10 times over ~5 s and reports two things: candidate processes whose name matches a bridge/host/handler pattern, and **high-churn** processes that appear under three or more distinct PIDs during the window. High churn is the signature of the CCC re-fire — the same logical process being created and destroyed repeatedly.
+
+```powershell
+# Run WHILE the cycle is being forced:
+powershell -ExecutionPolicy Bypass -File .\find_ccc_procs.ps1
+```
+
+Output (console only): a candidate list, a `HIGH CHURN (>=3 distinct PIDs)` list, and the full command lines of likely matches. Note the image name(s) and command-line fragments that show high churn — these feed Script 2.
+
+### Script 2 — `capture_ccc_v2.ps1` (capture)
+
+Records the spawn/exit timeline and per-PID CPU of the matching processes over a fixed window. A process matches if **either** its image name contains any `-NamePatterns` substring **or** its full command line contains any `-CmdLinePatterns` substring (case-insensitive). The command-line matching is what catches generic-named hosts that name matching alone would miss.
+
+**Options:**
+
+| Option | Default | Meaning |
+|--------|---------|---------|
+| `-Seconds` | `90` | Total capture duration (the paper uses 90 s) |
+| `-IntervalMs` | `250` | Sampling interval in milliseconds |
+| `-NamePatterns` | `"Bridge","backgroundTaskHost","Communicator"` | Substrings matched against the process **image name** |
+| `-CmdLinePatterns` | `"bridgecom","Communicator_OutProc","BridgeHandler","BridgeTest"` | Substrings matched against the **full command line** |
+
+```powershell
+# Capture the CCC condition (run WHILE forcing the cycle):
+powershell -ExecutionPolicy Bypass -File .\capture_ccc_v2.ps1 -Seconds 90 -IntervalMs 250 `
+   -NamePatterns "Bridge","backgroundTaskHost","Communicator" `
+   -CmdLinePatterns "bridgecom","Communicator_OutProc","BridgeHandler","BridgeTest"
+```
+
+**Outputs** (written to the current directory):
+
+- `proc_events.csv` — one row per lifecycle event: `event` (`spawn`/`exit`), `elapsed_s`, `wallclock` (ISO 8601), `pid`, `name`. This is the primary evidence: each `spawn`/`exit` pair is one turn of the CCC loop (steps S3–S5).
+- `cpu_trace.csv` — one row per sample: `elapsed_s`, `wallclock`, `live_proc_count`, `cpu_pct_onecore`, `cpu_pct_machine`. CPU is derived from per-PID `TotalProcessorTime` deltas between samples.
+
+On completion the script prints a summary (`spawns`, `exits`, `max live procs`). If it matched zero processes, it tells you to re-run `find_ccc_procs.ps1` and pass the discovered names/cmdlines explicitly.
+
+> **Capture-fidelity caveat.** At the default 250 ms interval, the `spawn`/`exit` **counts** are reliable (each short-lived process is observed at least once), but the per-PID **CPU** figures undercount processes that live and die entirely between two samples (median lifetime ~0.5 s). This is why the paper reports the **re-fire count as a direct measurement** while keeping **Φ as a model-calibrated estimate**. A future kernel-level (ETW) capture would close this gap.
+
+## Result Generation Process
+
+The figures and headline numbers in the paper are reproduced from the two CSVs above via the plotting script (`plot_paper_figures_v6.py`, in the repository root). The end-to-end process:
+
+### Step 1 — Force the cycle
+
+Deploy `BridgeTest` (the vulnerable, non-foreground-gated build) on the Windows host and drive it through a suspend → resume transition so the `Resuming` handler begins re-spawning the WPF child. Leave the cycle running.
+
+### Step 2 — Discover process names
+
+In an elevated PowerShell, while the cycle runs:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\find_ccc_procs.ps1
+```
+
+Record the high-churn image name(s) and command-line fragments.
+
+### Step 3 — Capture the CCC condition
+
+Still while the cycle runs, using the names from Step 2:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\capture_ccc_v2.ps1 -Seconds 90 -IntervalMs 250 `
+   -NamePatterns <discovered-names> -CmdLinePatterns <discovered-cmdlines>
+```
+
+This produces `cpu_trace.csv` and `proc_events.csv` for the **active** condition.
+
+### Step 4 — Capture the idle baseline (control)
+
+Restart the application **without** forcing the cycle (or run the foreground-gated build), leave it open and idle, and run the same capture. Then rename the outputs to mark them as the control:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\capture_ccc_v2.ps1 -Seconds 90 -IntervalMs 250
+Rename-Item cpu_trace.csv   cpu_trace_idle.csv
+Rename-Item proc_events.csv proc_events_idle.csv
+```
+
+The idle baseline is what establishes the contrast: **0 re-launches** with the application open but not cycling.
+
+### Step 5 — Verify the trace
+
+A correct active capture yields a `proc_events.csv` in which the matching WPF process appears as a repeating `spawn`/`exit` sequence (≈36 spawn events over 90 s in the reference run), and an idle `proc_events_idle.csv` with a single stable instance and no re-launches. Quick sanity check:
+
+```powershell
+Import-Csv proc_events.csv | Group-Object event | Select-Object Name, Count
+# Expect: spawn ~36+, exit ~36   (active)
+Import-Csv proc_events_idle.csv | Group-Object event | Select-Object Name, Count
+# Expect: spawn 1, exit 0/1      (idle baseline)
+```
+
+### Step 6 — Generate the figures
+
+Place the four CSVs alongside the plotting script (or use the committed reference values, which the v6 script hard-codes for the re-fire figure) and run:
+
+```bash
+python plot_paper_figures_v6.py
+```
+
+This regenerates all seven figures, including the measured re-fire timeline (`refire_timeline.png`) that contrasts the 36 active re-launches against the zero-re-launch idle baseline.
+
+### Reference results from the committed capture
+
+| Condition | WPF re-launches (90 s) | Median inter-launch | Median process lifetime |
+|-----------|------------------------|---------------------|-------------------------|
+| **CCC active** | **36** | ~1.1 s (in bursts) | ~0.5 s |
+| **Idle baseline** | **0** | — | stable single instance |
+
+The committed CSVs (`cpu_trace.csv`, `proc_events.csv`, `cpu_trace_idle.csv`, `proc_events_idle.csv`) are the exact traces behind these numbers.
+
 ## Experimental Results
 
 ### Single-Request IPC Performance
@@ -301,7 +428,7 @@ private void CoreApplication_Resuming(object sender, object e)
 
 - **N = 1,000 @ 100 MB**: 257,409 ms total = **86× quota violations**
 - Each violation = full resume cycle restart
-- Cumulative cost = 86 × 13.1% CPU utilization × 6s cycle
+- Cumulative cost compounds across the measured ~0.4 Hz re-fire rate
 
 ### Validation: CCCHarness Minimal Reproduction
 
